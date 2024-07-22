@@ -8,7 +8,7 @@ function nullish() {
   let value = 0;
 
   let result = value || 100;
-  console.log({ "||": result });
+  console.log({ '||': result });
 
   function isNullOrUndefined(value) {
     return value === null || value === undefined ? true : false;
@@ -23,7 +23,7 @@ function nullish() {
 
 function optionalChaining() {
   const topic = {
-    _title: "매년 업데이트 되는 ECMAScript",
+    _title: '매년 업데이트 되는 ECMAScript',
     getTitle() {
       return this._title;
     },
@@ -32,14 +32,14 @@ function optionalChaining() {
     },
   };
 
-  if (topic && typeof topic === "object" && !Array.isArray(topic)) {
+  if (topic && typeof topic === 'object' && !Array.isArray(topic)) {
     let title, name;
 
-    if (typeof topic.getTitle === "function") {
+    if (typeof topic.getTitle === 'function') {
       title = topic.getTitle();
     }
 
-    if (typeof topic.getName === "function") {
+    if (typeof topic.getName === 'function') {
       name = topic.getName();
     }
 
